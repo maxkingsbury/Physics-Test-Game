@@ -1,0 +1,1 @@
+draw_sprite(sBackground, 0, 0, 0);
