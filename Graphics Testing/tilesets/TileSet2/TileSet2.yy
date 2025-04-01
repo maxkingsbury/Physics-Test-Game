@@ -1,13 +1,13 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"tCelestialObjects",
+  "%Name":"TileSet2",
   "autoTileSets":[],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"tCelestialObjects",
+  "name":"TileSet2",
   "out_columns":78,
   "out_tilehborder":2,
   "out_tilevborder":2,

@@ -1,6 +1,9 @@
-speed = 0;
+sspeed = 0;
 direction = 0;
 friction = 0.02;
+
+fire_cooldown = 0; 
+fire_rate = 120; // Frames between shots
 
 rotation_speed = 0;
 rotation_accel = 0.65;  // Speed at which the ship accelerates rotation
@@ -33,3 +36,14 @@ part_type_speed(global.Particle2, 1, 2, -0.10, 0); // Speed range, negative for 
 part_type_direction(global.Particle2, 0, 359, 0, 20); // Emit opposite direction of the ship
 part_type_blend(global.Particle2, false); // Glowing blend mode
 part_type_life(global.Particle2, 2, 4) // Particle life range
+
+// Create a Particle Type for Laser Weapon
+global.Particle_Laser = part_type_create();
+part_type_shape(global.Particle_Laser, pt_shape_flare);  // Can be a small square or circle
+part_type_size(global.Particle_Laser, 0.2, 0.4, 0, 0);  // Small to large particle
+part_type_color3(global.Particle_Laser, c_yellow, c_orange, c_red); // Light up the laser with colors
+part_type_alpha3(global.Particle_Laser, 1, 0.5, 0);  // Fade out over time
+part_type_speed(global.Particle_Laser, 25, 30, 0, 0);  // Speed of particles
+part_type_direction(global.Particle_Laser, 0, 0, 0, 0);  // No direction change; particles go straight
+part_type_life(global.Particle_Laser, 15, 40);  // Lifetime of particles (laser particles disappear quickly)
+part_type_blend(global.Particle_Laser, true);  // Add blending to give glowing effects

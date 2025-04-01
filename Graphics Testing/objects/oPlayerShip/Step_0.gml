@@ -59,3 +59,18 @@ if (x < 0) x = room_width;
 if (x > room_width) x = 0;
 if (y < 0) y = room_height;
 if (y > room_height) y = 0;
+
+if (fire_cooldown > 0) fire_cooldown--;
+
+if (mouse_check_button_pressed(mb_left)) {
+    // Position the front of the ship (the firing point)
+    var x_offset = lengthdir_x(10, image_angle);  // Offset to the front of the ship
+    var y_offset = lengthdir_y(10, image_angle);  // Offset to the front of the ship
+	
+	var bullet = instance_create_depth(x+x_offset, y+y_offset, -10, oBullet);
+	bullet.direction = image_angle;
+	
+	part_type_direction(global.Particle_Laser, image_angle, image_angle, 0 , 2);  // Add small spread
+    part_particles_create(global.P_System, x + x_offset, y + y_offset, global.Particle_Laser, 40);  // 1 particle per burst
+    
+}

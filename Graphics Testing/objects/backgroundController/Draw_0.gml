@@ -1,1 +1,1 @@
-draw_sprite(sBackground, 0, 0, 0);
+draw_sprite(sBackground, 0, -1000, 0);

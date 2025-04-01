@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"sCelestialObjects",
   "bboxMode":0,
-  "bbox_bottom":255,
+  "bbox_bottom":1023,
   "bbox_left":0,
-  "bbox_right":383,
+  "bbox_right":1535,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":256,
+  "height":1024,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"50c0ec01-8e6a-4be0-a53a-5e715a2f8cab","blendMode":0,"displayName":"default","isLocked":false,"name":"50c0ec01-8e6a-4be0-a53a-5e715a2f8cab","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"Assets",
+    "path":"folders/Sprites/Assets.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":384,
+  "width":1536,
 }
