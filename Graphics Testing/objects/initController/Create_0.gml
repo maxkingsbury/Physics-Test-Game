@@ -5,3 +5,4 @@ global.Particle1 = part_type_create();
 global.Particle2 = part_type_create();
 global.Particle3 = part_type_create();
 global.ParticleLaser = part_type_create();
+global.Particle_Explosion = part_type_create();
